@@ -65,3 +65,8 @@ Route::get('blade', function(){
 
 Route::get('showUsers', 'UserController@showUsers');
 
+Route::get('contact', 'AboutController@create')->name('contact');
+Route::post('contact', 'AboutController@store')->name('contact_store');
+
+
+
